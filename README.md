@@ -1,5 +1,3 @@
-Here's a README template you can use for your GitHub repository:
-
 ---
 
 # PC Website
@@ -11,6 +9,7 @@ This is a desktop-only website built using HTML, CSS, and JavaScript. The websit
 - **Desktop-Only Design:** This website is optimized for desktop usage and is not intended for mobile devices.
 - **Hover Effects:** All products on the website feature custom hover effects that enhance the user experience.
 - **Dynamic Price Bar:** A JavaScript-based price bar that automatically updates the displayed price as you adjust the slider.
+- **Image Folder:** The `img` folder contains all the images used on the website.
 
 ## Technologies Used
 
@@ -36,6 +35,19 @@ To view or modify this website locally:
 
 3. Open `index.html` in your preferred web browser.
 
+## Folder Structure
+
+- `index.html`: The main HTML file for the website.
+- `css/`: Contains all CSS files.
+- `js/`: Contains all JavaScript files.
+- `img/`: Contains all images used in the website.
+
+In this example:
+
+- The `img/` folder is where all your images are stored. For example, `product1.jpg` is located in the `img/` folder.
+- The `css/` and `js/` folders contain your CSS and JavaScript files, respectively.
+- The `updatePrice()` function in `script.js` would be responsible for dynamically changing the price based on the slider value.
+
 ## Usage
 
 - Open the website on a desktop browser.
@@ -51,4 +63,3 @@ Contributions are welcome! Feel free to submit a pull request or open an issue i
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
