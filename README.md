@@ -52,4 +52,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Make sure to replace the placeholder URL in the "Clone the repository" section with the actual link to your GitHub repository.
