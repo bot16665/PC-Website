@@ -1,0 +1,859 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-image: url("img/background.jpg");
+ 
+}
+
+.overlay {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 10px;
+  transition: color 0.3s;
+  gap: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header a:hover {
+  color: #FF0000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  margin-right: 20px;
+}
+
+.header nav a {
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.header nav a:last-child {
+  margin-right: 0;
+}
+
+.nav-links {
+  margin-top: 40px;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li {
+  margin-right: 20px;
+  grid-column: span 1;
+  list-style: none; /* add this line */
+
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li:nth-child(7) {
+  grid-column: 1;
+}
+
+
+.text {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+
+
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  background-color: #ffee00;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.search-bar button:hover {
+  background-color: #ff0000;
+}
+
+.banner {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.banner .text {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.banner2 {
+  text-align: center;
+}
+
+#img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#img2 a {
+  margin: 10px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#img2 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+#img2 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: yellow;
+}
+
+#img2 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "Press Start 2P", system-ui;
+  text-align: justify;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #f4b400;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #111;
+  font-weight: bold;
+}
+
+.sale .original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sale .sale-price {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 0.9em;
+  color: #d32f2f;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.342);
+  background-color: #ffcc00;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 10px;
+  transition: color 0.3s;
+  gap: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header a:hover {
+  color: #FF0000;
+}
+
+.text {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  background-color: #ffee00;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.search-bar button:hover {
+  background-color: #ff0000;
+}
+
+.banner {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.banner .text {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.banner2 {
+  text-align: center;
+}
+
+#img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#img2 a {
+  margin: 10px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#img2 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+#img2 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: yellow;
+}
+
+#img2 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "Press Start 2P", system-ui;
+  text-align: justify;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #f4b400;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #111;
+  font-weight: bold;
+}
+
+.sale .original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sale .sale-price {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 0.9em;
+  color: #d32f2f;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.342);
+  background-color: #ffcc00;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 10px;
+  transition: color 0.3s;
+  gap: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header a:hover {
+  color: #FF0000;
+}
+
+.text {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  background-color: #ffee00;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.search-bar button:hover {
+  background-color: #ff0000;
+}
+
+.banner {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.banner .text {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.banner2 {
+  text-align: center;
+}
+
+#img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#img2 a {
+  margin: 40px;
+  display: inline-block;
+   gap: 100px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#img2 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+#img2 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: yellow;
+}
+
+#img2 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "Press Start 2P", system-ui;
+  text-align: justify;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 30px;
+  font-family: "Press Start 2P", system-ui;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  margin: left 0;;
+}
+
+.product-card {
+  background-color: transparent; /* add this line */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  
+}
+
+.product-details {
+  padding: 20px;
+  text-align: center;
+
+}
+
+.product-details h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #f4b400;
+}
+
+.price {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+
+.sale .original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sale .sale-price {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 0.9em;
+  color: #d32f2f;
+}
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer .contact-header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .contact-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  
+}
+
+.footer .contact-header h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #d0d53f;
+  margin-top: 10px;
+  
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-content p,
+.footer-content a {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: none;
+  color:rgb(255, 8, 8);
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color:white;
+  font-size: 1.5rem;
+}
+
+
+p{
+  color: white;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.Pc-Bulding.com</title>
+    <link href="graphic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+       <!-- Header -->
+       <div class="header">
+        <div class="logo">
+            <a href="index.html" target="_self">Pc Bulding</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="build.html">PC-Build</a>
+            <a href="#" class="Components">Components</a>
+            <a href="#">Sign Up</a>
+        </nav>
+        <ul class="nav-links">
+            <li><a href="gamingpc.html">Gaming PCs</a></li>
+            <li><a href="graphic.html">Graphics Cards</a></li>
+            <li><a href="moniter.html">Monitors</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Cooling</a></li>
+            <li><a href="#">CPUs</a></li>
+            <li><a href="#">Memory (RAM)</a></li>
+            <li><a href="#">Motherboards</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Power Supply</a></li>
+            <li><a href="#">Accessories & Cables</a></li>
+        </ul>
+    </div>
+    </div>
+  <!----search-->
+    <div class="search-bar">
+        <div class="text">
+            <h1>Search</h1>
+        </div>
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+    </div>
+   <!-----header-->
+
+   <div class="header2">
+    <div class="naam">
+        <h1>Graphics Cards</h1>
+    </div>
+   </div>
+<!----contaner-->
+<div class="filter-sidebar">
+    <div class="filter-section">
+        <h3>Availability</h3>
+        <label><input type="checkbox"> In Stock (148)</label>
+        <label><input type="checkbox"> Out Of Stock (3)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Price</h3>
+        <div class="price-slider">
+            <input type="range" id="price-range" min="0" max="300000" value="0" oninput="updatePriceValue(this.value)">
+            <input type="number" id="price-min" min="0" max="300000" value="0" oninput="updatePriceRange(this.value)">
+            <input type="number" id="price-max" min="0" max="300000" value="300000" oninput="updatePriceRange(this.value)">
+        </div>
+        <button class="apply-button" onclick="applyFilter()">Apply</button>
+    </div>
+
+    <script>
+        function updatePriceValue(value) {
+            document.getElementById("price-min").value = value;
+        }
+
+        function updatePriceRange(value) {
+            document.getElementById("price-range").value = value;
+        }
+
+        function applyFilter() {
+            // Call a function to apply the filter here
+        }
+    </script>
+    <div class="filter-section">
+        <h3>Brand</h3>
+        <label><input type="checkbox">GIGABYTE </label>
+        <label><input type="checkbox">NVIDIA</label>
+        <label><input type="checkbox">AMD</label>
+        <label><input type="checkbox">INTEL </label>
+        <label><input type="checkbox">ASUS</label>
+
+    </div>
+
+    
+    <div class="filter-section">
+        <h3>GIGABYTE</h3>
+        <label><input type="checkbox">GeForce RTX 40 Series</label>
+        <label><input type="checkbox">GeForce RTX 30 Series </label>
+        <label><input type="checkbox">GeForce RTX 20 Series </label>
+        <label><input type="checkbox">GeForce RTX 16 Series </label>
+        <label><input type="checkbox">GeForce RTX 10 Series </label>
+        <label><input type="checkbox">GeForce 700 Series </label>
+    </div>
+
+    <div class="filter-section">
+        <h3>NVIDIA</h3>
+        <label><input type="checkbox">GeForce RTX 40 Series </label>
+        <label><input type="checkbox"> GeForce RTX 30 Series</label>
+        <label><input type="checkbox"> GeForce RTX 20 Series</label>
+        <label><input type="checkbox"> GeForce RTX 16 Series</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>AMD</h3>
+        <label><input type="checkbox"> AMD Radeon™ RX 7900 XTX</label>
+        <label><input type="checkbox"> AMD Radeon™ RX 7900 XT</label>
+        <label><input type="checkbox"> AMD Radeon™ RX 6950 XT</label>
+        <label><input type="checkbox"> AMD Radeon™ RX 6900 XT</label>
+        <label><input type="checkbox"> AMD Radeon™ RX 6800 XT</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>INTEL</h3>
+        <label><input type="checkbox"> Intel® Arc™ 7 Graphics</label>
+        <label><input type="checkbox">Intel® Arc™ 5 Graphics</label>
+        <label><input type="checkbox">Intel® Arc™ 3 Graphics</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>ASUS</h3>
+        <label><input type="checkbox"> ROG Strix</label>
+        <label><input type="checkbox"> ROG Matrix</label>
+        <label><input type="checkbox"> TUF Gaming</label>
+        <label><input type="checkbox"> ASUS </label>
+    </div>
+</div>
+
+
+<!----product-->
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/g1.png" alt="IGaming Ryzen 5 GTX 1650/RTX 4060 Matrexx TG">
+            </div>
+            <div class="product-details">
+                <h2>GIGABYTE GeForce RTX 4090 | WINDFORCE 24G Graphics Card | 3X Wind Force Fans| 24GB 384-bit GDDR6X</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 3 reviews</div>
+                <div class="price">From ₹2,34,500</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/g2.png" alt="IGaming Ryzen 5 7600 Radeon/NVIDIA">
+            </div>
+            <div class="product-details">
+                <h2>GIGABYTE Geforce RTX 4080| Gaming Oc 16G Graphics Card| 3X Windforce Fans|16Gb 256-Bit</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹1,18,999</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/g3.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>GIGABYTE Geforce RTX 4070 | Super Windforce Oc 12G Graphics Card | 3X Windforce Fans |12Gb 192-Bit</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹69,999</div>
+            </div>
+        </div>
+
+        <div class="product-card sale">
+            <div class="product-image">
+                <img src="img/nv.png" alt="IGaming Ryzen 5 5500 RTX 4060-4060">
+            </div>
+            <div class="product-details">
+                <h2>Inno3D NVIDIA GEFORCE RTX 4060 | Twin X2 8GB- N40602-08D6-173051N  | 8 GB GDDR6 Graphics Card</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹47,880</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/nv2.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>INNO3D NVIDIA GEFORCE RTX 4080 | 16GB ICHILL X3  | GDDR6X 256-bit</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From 1,45,699</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/nv3.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2> NVIDIA GeForce RTX 4090 | SUPER Gaming OC 16GB |nGDDR6X 355-bit</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹3,40,000.</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/am.png" alt="IGaming Intel Core i5 12400F GTX 1650" height="90px" width="10px">
+            </div>
+            <div class="product-details">
+                <h2>ASUS Dual Radeon RX 6600 | 8 GB GDDR6 RAM PCIe 4.0 Dual Fans Desktop Graphic Card</h2>
+                <div class="rating">⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹45,500</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/am2.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>ASRock Rx7600 Sl 8Go AMD Radeon Rx 7600 Steel Legend | 8Gb Oc Graphics Card </h2>
+                <div class="rating">⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹51,899</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/am3.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>ASUS Dual Radeon Rx 7600 V2 Oc Edition | 8Gb Gddr6 Graphics Card</h2>
+                <div class="rating">⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹47,199</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------footer-->
+<footer class="footer">,
+    <div class="contact-header">
+        <h1>Contact us</h1>
+       
+    </div>
+    <div class="footer-content">
+        <div>
+            <h3>Coustom Bulid Pc brands®</h3>
+        </div>
+        <div>
+            <h3>London</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +44 20 7998 7571<br>
+                Unit 306, Metropolitan Wharf,<br> 70 Wapping Wall, London E1W 3SS</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>India</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +91 - 1122556478<br>
+                light cafe 1458 1st floor,<br>Mumbai - 400018</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>Want to join us?</h3>
+            <p><a href="#">SIGN UP FOR OUR NEWSLETTER →</a></p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                 <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    <p>Copyright   @Azhar-shaikh   2024</p>
+</footer>
+<script src="aap.js"></script>
+</body>
+</html>

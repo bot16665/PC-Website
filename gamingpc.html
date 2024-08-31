@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.Pc-Bulding.com</title>
+    <link href="gamingpc.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+       <!-- Header -->
+       <div class="header">
+        <div class="logo">
+            <a href="index.html" target="_self">Pc Bulding</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="build.html">PC-Build</a>
+            <a href="#">Components</a>
+            <a href="#">Sign Up</a>
+        </nav>
+        <ul class="nav-links">
+            <li><a href="gamingpc.html">Gaming PCs</a></li>
+            <li><a href="graphic.html">Graphics Cards</a></li>
+            <li><a href="moniter.html">Monitors</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Cooling</a></li>
+            <li><a href="#">CPUs</a></li>
+            <li><a href="#">Memory (RAM)</a></li>
+            <li><a href="#">Motherboards</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Power Supply</a></li>
+            <li><a href="#">Accessories & Cables</a></li>
+        </ul>
+    </div>
+  <!----search-->
+    <div class="search-bar">
+        <div class="text">
+            <h1>Search</h1>
+        </div>
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+    </div>
+   <!-----header-->
+
+   <div class="header2">
+    <div class="naam">
+        <h1>GAMING PC</h1>
+    </div>
+   </div>
+<!----contaner-->
+<div class="filter-sidebar">
+    <div class="filter-section">
+        <h3>Availability</h3>
+        <label><input type="checkbox"> In Stock (148)</label>
+        <label><input type="checkbox"> Out Of Stock (3)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Price</h3>
+        <div class="price-slider">
+            <input type="range" id="price-range" min="0" max="500000" value="0" oninput="updatePriceValue(this.value)">
+            <input type="number" id="price-min" min="0" max="500000" value="0" oninput="updatePriceRange(this.value)">
+            <input type="number" id="price-max" min="0" max="500000" value="500000" oninput="updatePriceRange(this.value)">
+        </div>
+        <button class="apply-button" onclick="applyFilter()">Apply</button>
+    </div>
+
+    <script>
+        function updatePriceValue(value) {
+            document.getElementById("price-min").value = value;
+        }
+
+        function updatePriceRange(value) {
+            document.getElementById("price-range").value = value;
+        }
+
+        function applyFilter() {
+            // Call a function to apply the filter here
+        }
+    </script>
+    <div class="filter-section">
+        <h3>Brand</h3>
+        <label><input type="checkbox"> I Gaming Computer (150)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Color</h3>
+        <label><input type="radio" name="color"> <span class="color-box black"></span></label>
+        <label><input type="radio" name="color"> <span class="color-box pink"></span></label>
+        <label><input type="radio" name="color"> <span class="color-box gray"></span></label>
+        <label><input type="radio" name="color"> <span class="color-box white"></span></label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Graphics Card</h3>
+        <label><input type="checkbox"> GTX 1650 (5)</label>
+        <label><input type="checkbox"> RTX 4060 (70)</label>
+        <label><input type="checkbox"> RTX 4060 Ti (91)</label>
+        <label><input type="checkbox"> RTX 4070 Super (84)</label>
+        <label><input type="checkbox"> RTX 4070 Ti Super (78</label>
+        <label><input type="checkbox"> RTX 4080 Super (49)</label>
+        <label><input type="checkbox"> RTX 4090 (37)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Intel CPU</h3>
+        <label><input type="checkbox"> i5-12400F (14)</label>
+        <label><input type="checkbox"> i5-14400F (15)</label>
+        <label><input type="checkbox"> 15-14600KF (13)</label>
+        <label><input type="checkbox"> 17-12700F (16)</label>
+        <label><input type="checkbox"> 17-14700KF (30)</label>
+        <label><input type="checkbox"> 19-14900KF (19)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>AMD CPU</h3>
+        <label><input type="checkbox"> Ryzen 5 5500 (13)</label>
+        <label><input type="checkbox"> Ryzen 5 5600 (16)</label>
+        <label><input type="checkbox"> Ryzen 5 5600X (4)</label>
+        <label><input type="checkbox"> Ryzen 5 7500F (3)</label>
+        <label><input type="checkbox"> Ryzen 5 7600 (8)</label>
+        <label><input type="checkbox"> Ryzen 5 7600X (21)</label>
+        <label><input type="checkbox"> Ryzen 7 5700X (9)</label>
+        <label><input type="checkbox"> Ryzen 7 5800X (3)</label>
+        <label><input type="checkbox"> Ryzen 7 7700X (29)</label>
+        <label><input type="checkbox"> Ryzen 7 7800X 3D (18)</label>
+        <label><input type="checkbox"> Ryzen 9 7900X (13)</label>
+        <label><input type="checkbox"> Ryzen 9 7950X (6)</label>
+        <label><input type="checkbox"> Ryzen 9 7950X 3D (9)</label>
+    </div>
+</div>
+
+
+<!----product-->
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc1.png" alt="IGaming Ryzen 5 GTX 1650/RTX 4060 Matrexx TG">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Ryzen 5 | GTX 1650/RTX 4060 | Matrexx TG</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 3 reviews</div>
+                <div class="price">From ₹83,819</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc2.png" alt="IGaming Ryzen 5 7600 Radeon/NVIDIA">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Ryzen 5 7600 | Radeon/NVIDIA Graphics | 32GB DDR5 Ram | WorkForce Edition</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹98,083</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc3.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Intel Core i5 12400F | GTX 1650 / RTX 4060 | Work Station</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹106,000.00</div>
+            </div>
+        </div>
+
+        <div class="product-card sale">
+            <div class="product-image">
+                <img src="img/pc4.png" alt="IGaming Ryzen 5 5500 RTX 4060-4060">
+            </div>
+            <div class="product-details">
+                <h2>IGaming Ryzen 5 5500 | RTX 4060-4060 | Phantom NX200M</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">
+                    <span class="original-price">₹1,22415</span>
+                    <span class="sale-price">₹1,03956</span>
+                    <span class="discount">Save ₹18,458</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc5.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Ryzen 5 | RTX 4060-4060Ti | Antec CX200</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹1,62,670</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc6.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Intel Core i7 12400H |  RTX 4050 | Work Station</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹2,40,000.</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc7.png" alt="IGaming Intel Core i5 12400F GTX 1650" height="90px" width="10px">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Intel Core i7-i8 | RTX 4060-4060Ti | Antec CX200</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹3,13186</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc8.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Gaming Intel Core i5 12400K |  RTX 4070 | Work Station</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹3,21,899</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/pc9.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Gaming  Ryzen 7 12400F | GTX 1650 / RTX 4060 | Work Station</h2>
+                <div class="rating">⭐⭐⭐⭐⭐ 1 review</div>
+                <div class="price">From ₹2,10,1999</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------footer-->
+<footer class="footer">,
+    <div class="contact-header">
+        <h1>Contact us</h1>
+       
+    </div>
+    <div class="footer-content">
+        <div>
+            <h3>Coustom Bulid Pc brands®</h3>
+        </div>
+        <div>
+            <h3>London</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +44 20 7998 7571<br>
+                Unit 306, Metropolitan Wharf,<br> 70 Wapping Wall, London E1W 3SS</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>India</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +91 - 1122556478<br>
+                light cafe 1458 1st floor,<br>Mumbai - 400018</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>Want to join us?</h3>
+            <p><a href="#">SIGN UP FOR OUR NEWSLETTER →</a></p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                 <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    <p>Copyright   @Azhar-shaikh   2024</p>
+</footer>
+<script src="aap.js"></script>
+</body>
+</html>

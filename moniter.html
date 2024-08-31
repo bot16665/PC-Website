@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.Pc-Bulding.com</title>
+    <link href="moniter.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+       <!-- Header -->
+       <div class="header">
+        <div class="logo">
+            <a href="index.html" target="_self">Pc Bulding</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="build.html">PC-Build</a>
+            <a href="#" class="Components">Components</a>
+            <a href="#">Sign Up</a>
+        </nav>
+        <ul class="nav-links">
+            <li><a href="gamingpc.html">Gaming PCs</a></li>
+            <li><a href="graphic.html">Graphics Cards</a></li>
+            <li><a href="moniter.html"">Monitors</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Cooling</a></li>
+            <li><a href="#">CPUs</a></li>
+            <li><a href="#">Memory (RAM)</a></li>
+            <li><a href="#">Motherboards</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Power Supply</a></li>
+            <li><a href="#">Accessories & Cables</a></li>
+        </ul>
+    </div>
+    </div>
+  <!----search-->
+    <div class="search-bar">
+        <div class="text">
+            <h1>Search</h1>
+        </div>
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+    </div>
+   <!-----header-->
+
+   <div class="header2">
+    <div class="naam">
+        <h1>Graphics Cards</h1>
+    </div>
+   </div>
+<!----contaner-->
+<div class="filter-sidebar">
+    <div class="filter-section">
+        <h3>Availability</h3>
+        <label><input type="checkbox"> In Stock (148)</label>
+        <label><input type="checkbox"> Out Of Stock (3)</label>
+    </div>
+
+    <div class="filter-section">
+        <h3>Price</h3>
+        <div class="price-slider">
+            <input type="range" id="price-range" min="0" max="300000" value="0" oninput="updatePriceValue(this.value)">
+            <input type="number" id="price-min" min="0" max="300000" value="0" oninput="updatePriceRange(this.value)">
+            <input type="number" id="price-max" min="0" max="300000" value="300000" oninput="updatePriceRange(this.value)">
+        </div>
+        <button class="apply-button" onclick="applyFilter()">Apply</button>
+    </div>
+
+    <script>
+        function updatePriceValue(value) {
+            document.getElementById("price-min").value = value;
+        }
+
+        function updatePriceRange(value) {
+            document.getElementById("price-range").value = value;
+        }
+
+        function applyFilter() {
+            // Call a function to apply the filter here
+        }
+    </script>
+    <div class="filter-section">
+        <h3>Brand</h3>
+        <label><input type="checkbox">Acer</label>
+        <label><input type="checkbox">ASUS</label>
+        <label><input type="checkbox">DELL</label>
+        <label><input type="checkbox">LG </label>
+        <label><input type="checkbox">SAMSUNG</label>
+
+    </div>
+
+    <div class="filter-section">
+        <h3>RESOLUTION</h3>
+        <label><input type="checkbox"> 8k </label>
+        <label><input type="checkbox"> 5k</label>
+        <label><input type="checkbox"> 4k</label>
+    </div>
+</div>
+
+</div>
+
+
+<!----product-->
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m1.png" alt="IGaming Ryzen 5 GTX 1650/RTX 4060 Matrexx TG">
+            </div>
+            <div class="product-details">
+                <h2>Acer XZ306CX 29.5 Inch (74.93 Cm) Ultrawide 21:9 1500R Curve 2560 X 1080 </h2>
+                <div class="price">From ₹97,500</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m2.png" alt="IGaming Ryzen 5 7600 Radeon/NVIDIA">
+            </div>
+            <div class="product-details">
+                <h2>LG (38 Inch) Ultrawide Monitor Curved (3840 * 1600)</h2>
+                <div class="price">From ₹1,04,999</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m3.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>ASUS Rog Swift 41.5" 4K OLED Gaming Monitor Uhd (3840 X 2160), 138Hz</h2>
+                <div class="price">From ₹ 1,06,999</div>
+            </div>
+        </div>
+
+        <div class="product-card sale">
+            <div class="product-image">
+                <img src="img/m4.png" alt="IGaming Ryzen 5 5500 RTX 4060-4060">
+            </div>
+            <div class="product-details">
+                <h2>LG 27QN600-B 27 QHD (2560 x 1440)</h2>
+                <div class="price">From ₹47,880</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m5.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Samsung Odyssey G3 Gaming Monitor 60cm (24 inches), FHD 1920 X 1080, 165 Hz, 1ms(MPRT),</h2>
+                <div class="price">From 45,699</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m6.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2> Samsung 49-inch(124.4cm) Odyssey OLED G9 Dual QHD, 240Hz, 0.03ms Curved Gaming Monitor,</h2>
+                <div class="price">From ₹2,03,000.</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m7.png" alt="IGaming Intel Core i5 12400F GTX 1650" height="90px" width="10px">
+            </div>
+            <div class="product-details">
+                <h2>Dell Alienware 34"(86.36 Cm) Curved Qd-OLED Gaming Monitor-Aw3423Dwf,Wqhd 3440X1440 Dp Port:165Hz</h2>
+                <div class="price">From ₹1,45,500</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m8.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>Dell S3221QS 32 Inch (81.28 cm) LED 3840 x 2160 Pixels Curved 4K UHD</h2>
+                <div class="price">From ₹51,899</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/m9.png" alt="IGaming Intel Core i5 12400F GTX 1650">
+            </div>
+            <div class="product-details">
+                <h2>ASUS ROG Swift 27”1440P OLED DSC Gaming Monitor (PG27AQDM) - QHD (2560x1440), 240Hz</h2>
+                <div class="price">From ₹57,199</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------footer-->
+<footer class="footer">,
+    <div class="contact-header">
+        <h1>Contact us</h1>
+       
+    </div>
+    <div class="footer-content">
+        <div>
+            <h3>Coustom Bulid Pc brands®</h3>
+        </div>
+        <div>
+            <h3>London</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +44 20 7998 7571<br>
+                Unit 306, Metropolitan Wharf,<br> 70 Wapping Wall, London E1W 3SS</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>India</h3>
+            <p><a href="">Azharshaikh@gmail.com</a><br> +91 - 1122556478<br>
+                light cafe 1458 1st floor,<br>Mumbai - 400018</p>
+            <p><a href="#">SEE ON MAP</a></p>
+        </div>
+        <div>
+            <h3>Want to join us?</h3>
+            <p><a href="#">SIGN UP FOR OUR NEWSLETTER →</a></p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                 <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    <p>Copyright   @Azhar-shaikh   2024</p>
+</footer>
+<script src="aap.js"></script>
+</body>
+</html>

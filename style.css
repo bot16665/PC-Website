@@ -1,0 +1,332 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.overlay {
+   padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Press Start 2P", system-ui;
+
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 10px;
+  transition: color 0.3s;
+  gap: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+ 
+}
+
+.header a:hover {
+  color: #FF0000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav {
+  margin-right: 20px;
+}
+
+.header nav a {
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.header nav a:last-child {
+  margin-right: 0;
+}
+
+.nav-links {
+  margin-top: 40px;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li {
+  margin-right: 20px;
+  grid-column: span 1;
+  list-style: none; /* add this line */
+
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li:nth-child(7) {
+  grid-column: 1;
+}
+
+.text {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Press Start 2P", system-ui;
+  justify-self: start;
+  cursor: pointer;
+  text-align: center;
+}
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Press Start 2P", system-ui;
+  cursor: pointer;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  background-color: #ffee00;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Press Start 2P", system-ui;
+
+  
+}
+
+.search-bar button:hover {
+  background-color: #fffffe;
+}
+
+.product-details {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  left: 1.3rem;
+}
+
+.product-details div {
+  width: 50%;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.product-details ul {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  font-family:sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-details img {
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+   margin-right: auto;
+  margin-left: auto;
+}
+
+.yellow-button {
+  background-color: yellow;
+  color: #000; /* add this to make the text black */
+  border: 2.5;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+  margin: auto;
+  display: block;
+
+}
+
+.categories {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Press Start 2P", system-ui;
+  justify-self: start;
+  cursor: pointer;
+
+}
+.categories img {
+  width: 120px;
+  height: 120px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid;
+  max-width: 50%;
+  margin-right: 5rem;
+  
+}
+
+.categories img:hover {
+  transform: scale(1.1);
+}
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer .contact-header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .contact-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  
+}
+
+.footer .contact-header h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #d0d53f;
+  margin-top: 10px;
+  
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-content p,
+.footer-content a {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: none;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #bbb;
+  font-size: 1.5rem;
+}
+
+p{
+  color: white;
+}
